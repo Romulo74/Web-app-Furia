@@ -16,11 +16,7 @@ Este é um aplicativo web para validação de documentos de fãs da FURIA Esport
 - Python 3.12+
 - Instale as dependências com o `pip`:
 
-```bash
-pip install -r requirements.txt
-
-
-##Estrutura do Projeto
+## Estrutura do Projeto
 main.py: Contém o código principal do FastAPI, responsável por gerenciar as rotas e interações com o usuário.
 
 templates/validated.html: A página de validação, onde os usuários podem visualizar as informações sobre a FURIA e interagir com os dados.
@@ -29,7 +25,7 @@ static/: Contém os arquivos estáticos como imagens e folhas de estilo (CSS).
 
 requirements.txt: Arquivo com as dependências do projeto, que podem ser instaladas com pip.
 
-##Redes Sociais
+## Redes Sociais
 O projeto inclui integração com as seguintes redes sociais:
 
 Instagram
@@ -39,3 +35,6 @@ Facebook
 X (Twitter)
 
 Os usuários podem vincular suas contas dessas plataformas para validar suas interações e obter uma visão mais completa de seu envolvimento com a FURIA Esports.
+
+
+
