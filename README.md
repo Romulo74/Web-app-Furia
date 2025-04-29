@@ -36,5 +36,12 @@ X (Twitter)
 
 Os usuários podem vincular suas contas dessas plataformas para validar suas interações e obter uma visão mais completa de seu envolvimento com a FURIA Esports.
 
+## Contato
+Se você tiver dúvidas ou sugestões, entre em contato com:
 
+Nome: Romulo Augusto Vieira
+
+E-mail: contatoromulovieira@gmail.com
+
+GitHub: https://github.com/romulo74
 
