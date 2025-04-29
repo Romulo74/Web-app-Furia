@@ -1,0 +1,16 @@
+know_your_fan/
+│
+├── app/
+│   ├── main.py                # FastAPI app
+│   ├── models.py              # ORM: modelos do banco de dados
+│   ├── schemas.py             # Pydantic: validação de dados
+│   ├── routes/
+│   │   ├── auth.py            # Login/cadastro
+│   │   ├── user.py            # Endpoints de dados do usuário
+│   │   ├── validation.py      # Upload e IA
+│   └── utils/
+│       └── ocr.py             # Função de OCR (para validar documentos)
+│
+├── requirements.txt
+├── README.md
+└── .env
