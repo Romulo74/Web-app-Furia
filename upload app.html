@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload de Documento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Barra de Navegação -->
+    <header>
+      <nav
+        class="bg-blue-700 text-white p-4 flex justify-center space-x-6 mb-6 shadow"
+      >
+        <a href="/" class="hover:underline">Cadastro</a>
+        <a href="/upload" class="hover:underline font-bold"
+          >Validação de Documento</a
+        >
+        <a href="/admin" class="hover:underline">Painel Admin</a>
+      </nav>
+    </header>
+
+    <!-- Container -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10">
+      <!-- Título -->
+      <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">
+        Upload de Documento
+      </h1>
+
+      <!-- Formulário de Upload -->
+      <form
+        action="/validate-id"
+        method="POST"
+        enctype="multipart/form-data"
+        class="space-y-4"
+      >
+        <div>
+          <label for="file" class="block text-lg font-medium text-gray-700">
+            Escolha seu Documento
+          </label>
+          <input
+            type="file"
+            id="file"
+            name="file"
+            accept="image/*,.pdf"
+            class="w-full p-3 border border-gray-300 rounded-md"
+            required
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          >
+            Enviar Documento
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validação Concluída - FURIA CS:GO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Animação de fade-in para o texto */
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.5s forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Efeito de animação para o botão */
+      .hover-scale {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .hover-scale:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+
+    <!-- Barra de Navegação -->
+    <header>
+      <nav class="bg-blue-700 text-white p-4 flex justify-center space-x-6 mb-6 shadow">
+        <a href="/" class="hover:underline">Cadastro</a>
+        <a href="/upload" class="hover:underline">Validação de Documento</a>
+      </nav>
+    </header>
+
+    <!-- Container Principal -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10">
+      
+      <!-- Título -->
+      <h1 class="text-3xl font-bold text-center text-blue-600 mb-6 fade-in">
+        Validação Concluída
+      </h1>
+
+      <!-- Mensagem de Validação -->
+      <div class="text-center fade-in" style="animation-delay: 0.5s;">
+        <p class="text-xl font-semibold text-gray-800 mb-4">
+          Seu documento foi validado com sucesso! Agora você está oficialmente registrado como fã da FURIA.
+        </p>
+
+        <p class="text-lg text-gray-600 mb-6">
+          Abaixo, você encontrará informações sobre a FURIA no CS:GO.
+        </p>
+
+        <!-- Informações da FURIA CS:GO -->
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md fade-in" style="animation-delay: 1s;">
+          <h2 class="text-2xl font-bold text-blue-600 mb-4">FURIA no CS:GO</h2>
+
+          <p class="text-gray-700 mb-2">
+            A FURIA Esports é uma das maiores organizações de eSports do Brasil, com uma presença de destaque no cenário competitivo de CS:GO.
+          </p>
+          
+          <p class="text-gray-700 mb-2">
+            - <span class="font-semibold">Jogo</span>: Counter-Strike: Global Offensive (CS:GO)
+          </p>
+          <p class="text-gray-700 mb-2">
+            - <span class="font-semibold">Ano de Fundação</span>: 2017
+          </p>
+          <p class="text-gray-700 mb-2">
+            - <span class="font-semibold">Principais Conquistas</span>: 
+            <ul class="list-disc ml-5">
+              <li>Campeã da ESL Pro League Season 12: América</li>
+              <li>Top 10 no ranking mundial da HLTV</li>
+              <li>Vencedora do IEM Beijing-Haidian 2020</li>
+            </ul>
+          </p>
+          <p class="text-gray-700 mb-2">
+            - <span class="font-semibold">Jogadores Principais</span>: 
+            <ul class="list-disc ml-5">
+              <li>yuurih</li>
+              <li>KSCERATO</li>
+              <li>art</li>
+              <li>VINI</li>
+              <li>drop</li>
+            </ul>
+          </p>
+          <p class="text-gray-700 mb-2">
+            - <span class="font-semibold">Patrocinadores</span>: 
+            <ul class="list-disc ml-5">
+              <li>Red Bull</li>
+              <li>Intel</li>
+              <li>HyperX</li>
+              <li>Razer</li>
+            </ul>
+          </p>
+
+          <p class="text-gray-700 mt-4">
+            Para mais informações, acesse o site oficial da FURIA e fique por dentro das últimas novidades e torneios!
+          </p>
+        </div>
+
+        <!-- Botões de Navegação -->
+        <div class="flex justify-center space-x-4 mt-8">
+          <a href="/" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 ease-in-out hover-scale">
+            Voltar para Cadastro
+          </a>
+          <a href="/upload" class="px-6 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-300 ease-in-out hover-scale">
+            Validar Outro Documento
+          </a>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="flex justify-center space-x-6 mt-8">
+          <a href="https://www.instagram.com/furiagaming" target="_blank" class="text-gray-700 hover:text-gray-900 transition duration-300 ease-in-out">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-8 h-8">
+          </a>
+          <a href="https://www.facebook.com/FURIAesports" target="_blank" class="text-gray-700 hover:text-gray-900 transition duration-300 ease-in-out">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="w-8 h-8">
+          </a>
+          <a href="https://x.com/FURIAesports" target="_blank" class="text-gray-700 hover:text-gray-900 transition duration-300 ease-in-out">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/X_Logo_%28official%29.svg" alt="X" class="w-8 h-8">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Animações de fade-in para os elementos após o carregamento da página
+      document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach((el, index) => {
+          el.style.animationDelay = `${index * 0.5}s`; // Atraso crescente para as animações
+        });
+      });
+    </script>
+  </body>
+</html>
+
